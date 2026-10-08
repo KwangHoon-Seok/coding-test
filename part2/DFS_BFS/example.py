@@ -30,6 +30,7 @@ def bfs(graph, start, visited):
     while queue:
         v = queue.popleft()
         print(v, end = ' ')
+        # v노드와 인접한 노드들을 반복문으로 추가
         for i in graph[v]:
             if not visited[i]:
                 queue.append(i)
